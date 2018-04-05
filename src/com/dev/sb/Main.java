@@ -42,7 +42,7 @@ public class Main
                                         String embedText = s.nextLine();//Obtains text to be embedded from the user.
 
 
-                                        if (embedText.length() > (((originalImage.getWidth() * originalImage.getHeight()) - 32) / 8))//Checks whether image size is large enough to store text provided.
+                                        if (embedText.length() > (((originalImage.getWidth() * originalImage.getHeight()) - 32) / 8)-1)//Checks whether image size is large enough to store text provided.
                                             {
                                                 //To store data, text length should be less than (number of pixels-32 /8)
 

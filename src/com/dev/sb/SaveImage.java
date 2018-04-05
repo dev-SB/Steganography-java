@@ -11,7 +11,7 @@ public class SaveImage
             {
               try
                   {
-                      ImageIO.write(image,"png",new File("encryptedImage.png"));
+                      ImageIO.write(image,"png",new File("C://Users/Shubham Bhandari/Desktop/encryptedImage.png"));
                   }
                   catch (IOException e)
                       {

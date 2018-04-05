@@ -30,8 +30,10 @@ public class EmbedText
                                         originalImage.setRGB(x, y, originalImage.getRGB(x, y) & ZEROATLAST);//Replaces least significant value of the blue color of the pixel with 0.
                                     }
                                 x++;
-                                if (x > originalImage.getWidth())
+
+                                if (x >= originalImage.getWidth())
                                     {
+
                                         x = 0;
                                         y++;
                                     }

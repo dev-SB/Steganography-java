@@ -19,10 +19,12 @@ public class ExtractText
                             {
                                 bitValue = encryptedImage.getRGB(x, y) & EXTRACTOR;//Extracts last bit from blue color.
                                 x++;
-                                if (x > encryptedImage.getWidth())
+
+                                if (x >= encryptedImage.getWidth())
                                     {
                                         x = 0;
                                         y++;
+
                                     }
                                 asciiCode = asciiCode >> 1;//Left shift to form the character moving the bits by one place and store a new bit.
                                 if (bitValue == 1)
